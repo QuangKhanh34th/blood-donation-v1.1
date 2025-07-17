@@ -104,10 +104,12 @@ const useProgramSubmission = () => {
 
       const programData = {
         proName: values.proName,
-        startDate: values.startDate.format('YYYY-MM-DD'),
-        endDate: values.endDate.format('YYYY-MM-DD'),
+        startDate: values.startDate ? values.startDate.format('YYYY-MM-DD') : null,
+        endDate: values.endDate ? values.endDate.format('YYYY-MM-DD') : null,
         // if isEdit, don't change dateCreated
-        dateCreated: isEditMode ? values.dateCreated.format('YYYY-MM-DD') : dayjs().format('YYYY-MM-DD'),
+        dateCreated: isEditMode ? 
+          (values.dateCreated ? values.dateCreated.format('YYYY-MM-DD') : null) : 
+          dayjs().format('YYYY-MM-DD'),
         addressId: finalAddressId,
         cityId: finalCityId,
         description: values.description || null,
