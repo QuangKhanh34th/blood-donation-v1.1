@@ -1,0 +1,138 @@
+$blue-background: #003087;
+$yellow-placeholder: #ffc107;
+
+.bloodDonationContainer {
+  background-color: $blue-background;
+  min-height: 70vh; /* Giữ nguyên nhưng sẽ điều chỉnh chiều cao nội dung */
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Tạo khoảng cách với footer */
+  margin-top: -75px;
+  margin-bottom: 25px;
+}
+
+.bloodDonationTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.bloodDonationContent {
+  display: flex;
+  gap: 20px;
+  flex: 1; /* Cho phép nội dung co giãn */
+}
+
+.bloodDonationImagePlaceholder {
+  background-color: $yellow-placeholder;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 80px;
+    height: 10px;
+    background-color: white;
+  }
+}
+
+.heartPlaceholder {
+  font-size: 50px;
+  color: red;
+  position: relative;
+  z-index: 1;
+}
+
+.bloodDonationStandardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  flex: 1;
+  max-height: 50vh; /* Giới hạn chiều cao để tránh dư thừa */
+  overflow-y: auto; /* Thêm cuộn nếu nội dung vượt quá */
+}
+
+.standardCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  color: black;
+  position: relative;
+ min-height: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.standardIcon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  background-color: #0055a4;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.standardTitle {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 35px;
+}
+
+.standardDescription {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 35px;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bloodDonationContent {
+    flex-direction: column;
+  }
+
+  .bloodDonationStandardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .bloodDonationStandardsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bloodDonationImagePlaceholder {
+    width: 150px;
+    height: 120px;
+  }
+}
+
+/* Footer styling (giả định) */
+.footer {
+  background-color: #d3d3d3;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px; /* Khoảng cách với nội dung */
+}

@@ -1,0 +1,158 @@
+.donor-benefits-container {
+  display: flex;
+  justify-content: center; // căn giữa theo chiều ngang
+  align-items: stretch; // kéo đều 2 panel
+  font-weight: 600;
+  max-width: 960px;
+  margin: 150px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0.3, 0, 0, 0.3);
+}
+
+.left-panel,
+.right-panel {
+  flex: 1;
+  padding: 24px;
+  margin-bottom: -72px;
+}
+
+.left-panel {
+  background: white;
+  .image {
+    object-fit: cover;
+  }
+}
+
+.right-panel {
+  border-radius: 20px 0 0 20px;
+  background-color: #e82525c7;
+  color: rgb(18, 17, 17);
+  text-align: center;
+}
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c62828; /* đỏ máu */
+  text-shadow: 2px 2px 8px rgba(198, 40, 40, 0.3);
+  animation: heartbeat 1.5s infinite;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.1);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.rightTitle {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.right-panel {
+  background-color: #f43838ed;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: sans-serif;
+  color: hsl(0, 0%, 100%);
+
+  h3 {
+    text-align: center;
+    color: #ffdc18e8;
+    margin-bottom: 16px;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+  }
+
+  h3:hover {
+    color: #ffffff;
+  }
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 17px;
+
+  li {
+    margin-bottom: 12px;
+    padding-left: 28px;
+    position: relative;
+  }
+}
+
+.subList {
+  list-style: none;
+  padding-left: 10px;
+
+  li {
+    margin: 6px 0;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: "➤";
+      position: absolute;
+      left: 0;
+      color: #e9e228;
+    }
+  }
+}
+.arrow {
+  font-size: 24px;
+  padding: 8px 12px;
+  margin: 10px;
+  background-color: #ffffff30;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  user-select: none;
+}
+
+.arrow:hover {
+  background-color: #ffffff50;
+  transform: scale(1.1);
+}
+
+.arrow:focus {
+  outline: none;
+}

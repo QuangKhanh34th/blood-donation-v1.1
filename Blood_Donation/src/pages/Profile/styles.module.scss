@@ -1,0 +1,79 @@
+.profileContainer {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.notice {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+  color: #888;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 48px; // 👉 tăng khoảng cách giữa hai khối
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.profileSection {
+  flex: 1;
+  min-width: 500px; // 👉 rộng hơn một chút
+  padding: 24px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  h3 {
+    margin-bottom: 16px;
+    color: #1890ff;
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 15px 0;
+    font-weight: 600;
+
+    strong {
+      display: inline-block;
+      width: 120px;
+      font-weight: 1000;
+      color: #333;
+    }
+  }
+}
+
+.editButtonWrapper {
+  // margin-top: 10px;
+  text-align: right;
+
+  button {
+    color: #1890ff;
+    font-weight: 500;
+  }
+}
+
+:global(.ant-modal-title) {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+:global(.ant-form-item-label > label) {
+  font-weight: 500;
+}

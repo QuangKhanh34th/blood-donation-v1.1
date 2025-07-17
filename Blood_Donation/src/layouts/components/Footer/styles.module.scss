@@ -1,0 +1,85 @@
+.Footer {
+  background-color: #e6e6e6;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLeft ul {
+  display: ruby;
+  list-style: none;
+  padding: 20px;
+  margin: 3px 0 0 0;
+  flex-wrap: wrap;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  /* 👇 Ngăn hiện dấu nháy khi double click */
+  outline: none;
+}
+
+.footerLeft ul li {
+  margin-right: 10px;
+}
+
+.footerLeft a {
+  color: #333;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  /* 👇 Ngăn hiện dấu nháy khi double click */
+  outline: none;
+}
+
+.footerLeft a:hover {
+  text-decoration: underline;
+}
+
+.footerRight a {
+  margin: 0 8px;
+  color: #666;
+  font-size: 30px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  /* 👇 Ngăn hiện dấu nháy khi double click */
+  outline: none;
+}
+
+.footerRight a:hover {
+  color: #000;
+}
+.footer {
+  background-color: #c1bdbd;
+}
+.title {
+  margin-top: 25px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  /* 👇 Ngăn hiện dấu nháy khi double click */
+  outline: none;
+}
+
+.footerRight {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}

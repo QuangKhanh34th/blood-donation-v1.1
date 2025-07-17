@@ -1,0 +1,24 @@
+.bannerWrapper {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .slick-dots {
+    bottom: 15px;
+
+    li button {
+      background-color: #fff;
+      opacity: 0.6;
+    }
+
+    li.slick-active button {
+      opacity: 1;
+      background-color: #1890ff;
+    }
+  }
+}

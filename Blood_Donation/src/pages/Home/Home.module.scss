@@ -1,0 +1,21 @@
+.home-container {
+  position: relative;
+
+  .carousel-wrapper {
+    position: relative;
+  }
+
+  .home-search {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 450px; // chỉnh nếu cần đè sâu hơn hay nông hơn
+    max-width: 900px;
+    width: 90%;
+    z-index: 10;
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}

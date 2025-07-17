@@ -1,0 +1,72 @@
+.registrationWrapper {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #222;
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.card {
+  flex: 1 1 400px;
+  min-width: 300px;
+  background-color: #fafafa;
+  padding: 20px 24px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #1c1c1c;
+  }
+
+  p {
+    margin: 25px 0;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .address {
+    font-style: italic;
+    color: #0077cc;
+  }
+
+  .noData {
+    font-style: italic;
+    color: #888;
+  }
+}
+
+.buttonWrapper {
+  text-align: center;
+
+  button {
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+}

@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f9fafb;
+  min-height: 80vh;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.image {
+  width: 120px;
+  height: auto;
+  margin-bottom: 24px;
+  opacity: 0.95;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  border-radius: 16px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.message {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 28px;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 20px 28px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #3498db; // default color for active
+
+  &.cancelled {
+    border-left-color: #e74c3c;
+  }
+
+  &.fulfilled {
+    border-left-color: #2ecc71;
+  }
+
+  &.pending {
+    border-left-color: #f1c40f;
+  }
+
+  &.rejected {
+    border-left-color: #bdc3c7;
+  }
+
+  .infoRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    span:first-child {
+      font-weight: 600;
+      color: #444;
+    }
+
+    span:last-child {
+      color: #555;
+    }
+  }
+
+  .status {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    background-color: #eaf4ff;
+    color: #3498db;
+
+    &.cancelled {
+      background-color: #fdecea;
+      color: #e74c3c;
+    }
+
+    &.fulfilled {
+      background-color: #eafaf1;
+      color: #2ecc71;
+    }
+
+    &.pending {
+      background-color: #fffbe6;
+      color: #f1c40f;
+    }
+
+    &.rejected {
+      background-color: #f4f4f4;
+      color: #888;
+    }
+  }
+}

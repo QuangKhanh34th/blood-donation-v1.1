@@ -1,0 +1,27 @@
+.filterBar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.selectBox {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  min-width: 100px;
+  max-width: 140px;
+}
+
+.searchInput {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: gainsboro;
+  width: 280px;
+  min-width: 120px;
+  flex: unset;
+}

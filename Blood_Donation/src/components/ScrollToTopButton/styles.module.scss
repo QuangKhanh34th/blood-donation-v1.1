@@ -1,0 +1,23 @@
+.scrollButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 16px; // to hơn
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: #40a9ff;
+    transform: scale(1.1);
+  }
+
+  svg {
+    font-size: 24px; // cũng to hơn
+  }
+}

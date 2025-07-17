@@ -1,0 +1,59 @@
+$form-gap: 20px;
+$border-radius: 8px;
+$input-border: #d9d9d9;
+$input-focus: #1890ff;
+$input-bg: #fefefe;
+
+.formContainer {
+  padding: 8px;
+}
+
+.formItem {
+  margin-bottom: $form-gap;
+
+  label {
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.inputField {
+  border-radius: $border-radius;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: $input-bg;
+  border: 1px solid $input-border;
+  transition: all 0.3s;
+
+  &:focus,
+  &:hover {
+    border-color: $input-focus !important;
+    box-shadow: 0 0 4px rgba($input-focus, 0.3);
+  }
+
+  &:disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+  }
+}
+
+.selectField {
+  .ant-select-selector {
+    border-radius: $border-radius !important;
+    height: auto !important;
+    padding: 6px 12px;
+    font-size: 14px;
+    transition: all 0.3s;
+    background-color: $input-bg;
+
+    &:hover {
+      border-color: $input-focus !important;
+      box-shadow: 0 0 4px rgba($input-focus, 0.3);
+    }
+  }
+
+  .ant-select-disabled .ant-select-selector {
+    background-color: #f5f5f5 !important;
+    color: #aaa;
+  }
+}

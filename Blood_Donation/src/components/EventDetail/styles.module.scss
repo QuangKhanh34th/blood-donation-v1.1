@@ -1,0 +1,40 @@
+.modal :global(.ant-modal-content) {
+  padding: 24px;
+}
+
+.detailItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 15px;
+
+  strong {
+    margin-right: 4px;
+    min-width: 130px;
+    display: inline-block;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .icon {
+    color: #2e66e5;
+    font-size: 18px;
+    margin-top: 3px;
+  }
+
+  span {
+    flex: 1;
+  }
+}
+
+.imageWrapper {
+  margin-top: 16px;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,71 @@
+.container {
+  padding: 50px;
+  background-color: #f9fbfc;
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.wrapper {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  border-right: 1px solid #dce1e6;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+  background-color: #f4f6f9;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+.sidebar a:hover {
+  background-color: #e9f1ff;
+  border-color: #b3d4fc;
+  color: #1a73e8;
+}
+
+/* Tab active */
+.active {
+  background-color: #1a73e8;
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+/* Tab inactive */
+.inactive {
+  background-color: #f0f2f5;
+  color: #333;
+  border: 1px solid #d0d5da;
+}
+
+/* Nội dung */
+.content {
+  flex: 1;
+  padding: 32px;
+}

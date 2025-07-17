@@ -1,0 +1,118 @@
+.donationGalleryContainer {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bannerSection {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.bannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.galleryImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+.bannerSection {
+  position: relative;
+  width: 100%;
+  height: 180px; // ↓ Giảm từ 250px xuống 180px
+}
+
+.bannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  z-index: 1;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  font-size: 22px; // ↓ Nhỏ hơn chút
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // ↓ nhỏ hơn chút
+  gap: 1rem;
+  padding: 1.5rem; // ↓ ít hơn chút
+  background-color: #f9f9f9;
+}
+
+.galleryImage {
+  width: 100%;
+  height: 150px; // ↓ Giảm từ 200px xuống 150px
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}

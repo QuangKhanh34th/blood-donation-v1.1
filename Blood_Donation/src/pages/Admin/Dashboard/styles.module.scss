@@ -1,0 +1,63 @@
+@use "sass:color";
+
+$primary: #3b82f6;
+$secondary: #10b981;
+$bg: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+$text: #1e293b;
+$card-bg: #ffffff;
+$hover: color.scale($primary, $lightness: -10%);
+
+$stat-bg: #f1f5f9;
+$border-color: #e5e7eb;
+
+.dashboard {
+  padding: 1rem;
+  background: $bg;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  color: $text;
+}
+
+.sider {
+  background: #001529 !important;
+}
+
+.logo {
+  height: 48px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  letter-spacing: 2px;
+}
+
+.header {
+  background: $bg;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  box-shadow: 0 1px 4px rgb(0 21 41 / 8%);
+}
+
+.headerTitle {
+  color: $primary;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 16px;
+  padding: 24px;
+  background: $card-bg;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
+  min-height: 360px;
+}
+
